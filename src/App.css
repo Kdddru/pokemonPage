@@ -28,7 +28,7 @@ a{
 
 /*main*/
 .main{
-  height: 100vh;
+  min-height: 87vh;
 }
 
 

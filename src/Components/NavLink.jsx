@@ -6,7 +6,7 @@ export const NavLink = () => {
     <div>
       <ul>
         <Link to={`/pokemonlist`}>도감</Link>
-        <Link to={`/gamepage`}>게임</Link>
+        <Link to={`/game`}>게임</Link>
         <Link to={`/pokemonlist`}>도감</Link>
         <Link to={`/animation`}>애니메이션</Link>
       </ul>

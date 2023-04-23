@@ -1,0 +1,126 @@
+{
+  "count": 1281,
+  "next": "https://pokeapi.co/api/v2/pokemon?offset=20&limit=20",
+  "previous": null,
+  "results": [
+    {
+      "id":"1",
+      "name": "이상해씨",
+      "url": "https://pokeapi.co/api/v2/pokemon/1/"
+    },
+    {
+      "id":"2",
+      "name": "이상해풀",
+      "url": "https://pokeapi.co/api/v2/pokemon/2/"
+    },
+    {
+      "id":"3",
+      "name": "이상해꽃",
+      "url": "https://pokeapi.co/api/v2/pokemon/3/"
+    },
+    {
+      "id":"4",
+      "name": "파이리",
+      "url": "https://pokeapi.co/api/v2/pokemon/4/"
+    },
+    {
+      "id":"5",
+      "name": "리자드",
+      "url": "https://pokeapi.co/api/v2/pokemon/5/"
+    },
+    {
+      "id":"6",
+      "name": "리자몽",
+      "url": "https://pokeapi.co/api/v2/pokemon/6/"
+    },
+    {
+      "id":"7",
+      "name": "꼬부기",
+      "url": "https://pokeapi.co/api/v2/pokemon/7/"
+    },
+    {
+      "id":"8",
+      "name": "어니부기",
+      "url": "https://pokeapi.co/api/v2/pokemon/8/"
+    },
+    {
+      "id":"9",
+      "name": "거북왕",
+      "url": "https://pokeapi.co/api/v2/pokemon/9/"
+    },
+    {
+      "id":"10",
+      "name": "캐터피",
+      "url": "https://pokeapi.co/api/v2/pokemon/10/"
+    },
+    {
+      "id":"11",
+      "name": "단데기",
+      "url": "https://pokeapi.co/api/v2/pokemon/11/"
+    },
+    {
+      "id":"12",
+      "name": "버터플라이",
+      "url": "https://pokeapi.co/api/v2/pokemon/12/"
+    },
+    {
+      "id":"13",
+      "name": "뿔충이",
+      "url": "https://pokeapi.co/api/v2/pokemon/13/"
+    },
+    {
+      "id":"14",
+      "name": "딱충이",
+      "url": "https://pokeapi.co/api/v2/pokemon/14/"
+    },
+    {
+      "id":"15",
+      "name": "독침붕",
+      "url": "https://pokeapi.co/api/v2/pokemon/15/"
+    },
+    {
+      "id":"16",
+      "name": "구구",
+      "url": "https://pokeapi.co/api/v2/pokemon/16/"
+    },
+    {
+      "id":"17",
+      "name": "피존",
+      "url": "https://pokeapi.co/api/v2/pokemon/17/"
+    },
+    {
+      "id":"18",
+      "name": "피존투",
+      "url": "https://pokeapi.co/api/v2/pokemon/18/"
+    },
+    {
+      "id":"19",
+      "name": "꼬렛",
+      "url": "https://pokeapi.co/api/v2/pokemon/19/"
+    },
+    {
+      "id":"20",
+      "name": "레트라",
+      "url": "https://pokeapi.co/api/v2/pokemon/20/"
+    },
+    {
+      "id":"21",
+      "name": "깨비참"
+    },
+    {
+      "id":"22",
+      "name": "깨비드릴조"
+    },
+    {
+      "id":"23",
+      "name": "아보"
+    },
+    {
+      "id":"24",
+      "name": "아보크"
+    },{
+      "id":"25",
+      "name": "피카츄"
+    }
+  ]
+}
