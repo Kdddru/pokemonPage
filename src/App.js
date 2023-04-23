@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { HeadComp } from './Components/HeadComp';
+import { FooterComp } from './Components/FooterComp';
+import { MainPage } from './pages/MainPage';
+import { PokemonList } from './pages/PokemonList';
+import { Gamepage } from './pages/Gamepage';
+import { Animation } from './pages/Animation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HeadComp/>
+        <Routes>
+          <Route path='/' Component={MainPage} />
+          <Route path='/pokemonlist' Component={PokemonList}/>
+          <Route path='/gamepage' Component={Gamepage}/>
+          <Route path='/animation' Component={Animation}/>
+        </Routes>
+      <FooterComp/>  
     </div>
   );
 }
