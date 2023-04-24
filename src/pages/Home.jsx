@@ -1,6 +1,6 @@
 import React, { useContext, useState} from 'react';
 import { NavLink } from '../Components/NavLink';
-import DataContext from '../Components/DataContext';
+import DataContext from '../context/DataContext';
 import './css/home.css'
 
 
@@ -10,23 +10,24 @@ export const Home = () => {
   const value = useContext(DataContext);
   const {state} = value;
   const pokemons = state.pokemons.results
-  console.log(pokemons);
+  //console.log(pokemons);
   
   //랜덤
   const random = Math.floor(Math.random()*pokemons.length);
-  console.log(random);
+  //console.log(random);
   
   const [randomNum, setRandomNum] = useState(random);
   
   const RandomBtn = () =>{
     const random2 = Math.floor(Math.random()*pokemons.length);
     setRandomNum(random2);
-    console.log(random2)
+    //console.log(random2)
   }
 
   return (
     <div className='main'>
       <NavLink/>
+      <button className='resetBtn' onClick={RandomBtn}>다시!</button>
       <div className='random-pokemon-div'>
         <div className='random-card'>
           <div className='random-card-img'>
@@ -36,10 +37,11 @@ export const Home = () => {
           </div>
           <p
           className='random-card-text'
-          >{pokemons[randomNum].name}</p>
+          >
+            {pokemons[randomNum].name}
+          </p>
         </div>
       </div>
-      <button onClick={RandomBtn}>다시!</button>
     </div>
   )
 }

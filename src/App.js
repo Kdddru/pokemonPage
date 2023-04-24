@@ -4,7 +4,7 @@ import { HeadComp } from './Components/HeadComp';
 import { FooterComp } from './Components/FooterComp';
 import { PokemonList } from './pages/PokemonList';
 import { Animation } from './pages/Animation';
-import { DataProvider } from './Components/DataContext';
+import { DataProvider } from './context/DataContext';
 import { Game } from './pages/Game';
 import { Home } from './pages/Home';
 import { Start } from './pages/Start';
