@@ -27,7 +27,6 @@ export const Home = () => {
   return (
     <div className='main'>
       <NavLink/>
-      <button className='resetBtn' onClick={RandomBtn}>다시!</button>
       <div className='random-pokemon-div'>
         <div className='random-card'>
           <div className='random-card-img'>
@@ -42,6 +41,12 @@ export const Home = () => {
           </p>
         </div>
       </div>
+      <div className='btn-div'>
+        <button className='btn-div-returnBtn' onClick={RandomBtn}>다시!</button>
+      </div>
     </div>
   )
 }
+
+
+

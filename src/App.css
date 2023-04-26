@@ -1,3 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+
+
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
 ul{
@@ -20,11 +24,41 @@ a{
   position: relative;
   background-color: red;
   border-bottom: 3px solid black;
-  height: 80px;
+  height: 80px;    /*50vh*/
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
+
+.header a{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-shadow: black 2.5px 2.5px 2.5px;
+  color: yellow;
+  font-size: 1.8rem;
+  font-family: 'Pokemon Solid', sans-serif;
+  transition: all 1s;
+}
+
+.header a:hover{
+  font-size: 2.1rem;
+  transition: all 1s;
+}
+
+
+.header>.top-circle{
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  border-radius: 80px 80px 0 0;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  left: 50%;
+  top: 50px;   /*47.5vh*/
+}
+
 
 /*main*/
 .main{
@@ -39,4 +73,19 @@ a{
   background-color: white;
   border-top: 3px solid black;
   height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer>.bottom-circle{
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  border-radius: 0 0 70px 70px;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  left: 50%;
+  top: -3px;
 }
