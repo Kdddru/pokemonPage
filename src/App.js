@@ -8,6 +8,7 @@ import { DataProvider } from './context/DataContext';
 import { Game } from './pages/Game';
 import { Home } from './pages/Home';
 import { Start } from './pages/Start';
+import { PokemonImfor } from './pages/PokemonImfor';
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
       <DataProvider>
         <HeadComp/>
           <Routes>
-            <Route path='/pokemonlist' Component={PokemonList}/>
+            <Route path='/pokemonlist' Component={PokemonList}>
+              <Route path='/pokemonlist/:pokemon' Component={PokemonImfor}/>
+            </Route>
             <Route path='/' Component={Start}>
               <Route path='/home' Component={Home}/>
               <Route path='/game' Component={Game}/>
