@@ -6,6 +6,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 export const PokemonList = () => {
   const {state} = useContext(DataContext);
   const pokemons = state.pokemons.results;
+  const value = state.btnValue;
 
   const [pokemonValue, setPokemonValue] =useState(pokemons);
   const [inputValue, setInputValue] = useState(``);

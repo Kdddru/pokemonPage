@@ -12,11 +12,11 @@ const DataProvider = ({children}) =>{
   const [pokemons, setPokemons] = useState(pokemonsJson);
   const [games, setGames] = useState(gamesJson);
   const [anis, setAnis] = useState(anisJson);
-
+  const [btnValue, setBtnvalue] = useState(false);
 
   const value = {
-    state : {pokemons,games,anis},
-    action : {setPokemons,setGames,setAnis}
+    state : {pokemons,games,anis,btnValue},
+    action : {setPokemons,setGames,setAnis,setBtnvalue}
   }
     
   return(

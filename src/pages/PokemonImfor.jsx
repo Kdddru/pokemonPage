@@ -1,13 +1,14 @@
 import React, { useContext } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import './css/pokemonimfo.css'
 import DataContext from '../context/DataContext';
+import './css/pokemonimfo.css'
 
 export const PokemonImfor = () => {
   const navi = useNavigate();
   const pokemonParm = useParams();
 
   const {state} = useContext(DataContext);
+  const value = state.btnValue;
 
   // pokemon 객체 들고오기
   const pokemons = state.pokemons.results;
@@ -25,7 +26,7 @@ export const PokemonImfor = () => {
     <div className='imfo' onClick={back}>
       <div className='imfo-pokemon'>
         <div>
-          <img 
+          <img className='imfo-pokemon-img' 
           src={`https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/00${(pokemon.id<10) ? `0${pokemon.id}`: pokemon.id}01.png`} 
           alt="" />
         </div>
