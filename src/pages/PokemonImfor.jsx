@@ -8,7 +8,6 @@ export const PokemonImfor = () => {
   const pokemonParm = useParams();
 
   const {state} = useContext(DataContext);
-  const value = state.btnValue;
 
   // pokemon 객체 들고오기
   const pokemons = state.pokemons.results;

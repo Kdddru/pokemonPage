@@ -1,13 +1,18 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { AniComp } from '../Components/AnipageComp/AniComp'
 import { MovieComp } from '../Components/AnipageComp/MovieComp'
-import DataContext from '../context/DataContext'
+import { HeadComp } from '../Components/HeadComp'
+import { FooterComp } from '../Components/FooterComp'
 
 export const Animation = () => {
   return (
-    <div className='main'>
-      <AniComp/>
-      <MovieComp/>
+    <div>
+      <HeadComp/>
+        <div className='main'>
+          <AniComp/>
+          <MovieComp/>
+        </div>
+      <FooterComp/>
     </div>
   )
 }

@@ -64,6 +64,16 @@ a{
   cursor: pointer;
 }
 
+.online-shop{
+  width: 80px;
+  height: 80px;
+  background-image: url('./img/sit.png');
+  background-size: cover;
+}
+.online-shop:hover{
+  background-image: url('./img/hi.png');
+}
+
 
 /*main*/
 .main{

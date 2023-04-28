@@ -3,8 +3,7 @@ import DataContext from '../context/DataContext';
 
 
 export const FooterComp = () => {
-  const {state, action} = useContext(DataContext);
-  const value = state.btnValue;
+  const {action} = useContext(DataContext);
   const click = () =>{
     action.setBtnvalue(true);
   }
@@ -12,8 +11,8 @@ export const FooterComp = () => {
 
   return (
     <div className='footer'>
-      <span style={value ? undefined: {display:'none'}}>gd</span>
-      <span style={value ? undefined: {display:'none'}}>ds</span>
+      <span>gd</span>
+      <span>ds</span>
       <div className='bottom-circle'
       style={{cursor:'pointer'}}
       onClick={click}
