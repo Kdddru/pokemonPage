@@ -38,30 +38,35 @@ export const Home = () => {
           <NavLink/>
         </div>
           {/**포켓몬 랜덤 카드 박스 */}
-        <div className='random-pokemon-div'
-        style={value ? {opacity:'1',transition:'1s' ,transitionDelay:`2s`}: {opacity:'0'}}
-        >
-        {/**포켓몬 랜덤 카드*/}
-          <div className='random-card' 
-          style={value ? {opacity:'1',transition:'1s' ,transitionDelay:`2.3s`}: {opacity:'0'}}>
+        <ul className='home-list'>
+          <div className='random-pokemon-div'
+          style={value ? {opacity:'1',transition:'1s' ,transitionDelay:`2s`}: {opacity:'0'}}
+          >
+          {/**포켓몬 랜덤 카드*/}
+            <div className='random-card' 
+            style={value ? {opacity:'1',transition:'1s' ,transitionDelay:`2.3s`}: {opacity:'0'}}>
 
-          {/**포켓몬 랜덤 카드 이미지 */}
-            <div className='random-card-img' 
-            style={value ? {opacity:'1',transition:'1s' ,transitionDelay:`2.7s`}: {opacity:'0'}}>
-              <img
-              src={`https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/00${(randomNum+1<10) ? `0${randomNum+1}`: randomNum+1}01.png`} 
-              alt="" />
+            {/**포켓몬 랜덤 카드 이미지 */}
+              <div className='random-card-img' 
+              style={value ? {opacity:'1',transition:'1s' ,transitionDelay:`2.7s`}: {opacity:'0'}}>
+                <img
+                src={`https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/00${(randomNum+1<10) ? `0${randomNum+1}`: randomNum+1}01.png`} 
+                alt="" />
+              </div>
+
+              {/**포켓몬 랜덤 카드 텍스트 */}
+              <p
+              className='random-card-text'
+              style={value ? {opacity:'1',transition:'1s' ,transitionDelay:`2.7s`}: {opacity:'0'}}
+              >
+                {pokemons[randomNum].name}
+              </p>
             </div>
-
-            {/**포켓몬 랜덤 카드 텍스트 */}
-            <p
-            className='random-card-text'
-            style={value ? {opacity:'1',transition:'1s' ,transitionDelay:`2.7s`}: {opacity:'0'}}
-            >
-              {pokemons[randomNum].name}
-            </p>
           </div>
-        </div>
+          <div>
+            
+          </div>
+        </ul>
 
         <div className='btn-div'
         style={value ? {opacity:'1',transition:'1s' ,transitionDelay:`2s`}: {opacity:'0'}} >
