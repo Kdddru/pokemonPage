@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import DataContext from '../context/DataContext';
 import './css/pokemonimfo.css'
 
+
 export const PokemonImfor = () => {
   const navi = useNavigate();
   const pokemonParm = useParams();
@@ -16,12 +17,14 @@ export const PokemonImfor = () => {
   const pokemon = pokemons.find((pokemon)=>(
     pokemon.name === pokemonParm.pokemon
   ))
-
+  
+  //뒤로가기 버튼
   const back = () => {
     navi(`/pokemonlist`);
   }
 
   return (
+    
     <div className='imfo' onClick={back}>
       <div className='imfo-pokemon'>
         <div>
@@ -29,9 +32,8 @@ export const PokemonImfor = () => {
           src={`https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/00${(pokemon.id<10) ? `0${pokemon.id}`: pokemon.id}01.png`} 
           alt="" />
         </div>
-        <p>
-          {pokemon.name}
-        </p>
+        <p className=''>NO.{pokemon.id}</p>
+        <p className=''>{pokemon.name}</p>
       </div>
     </div>
   )

@@ -40,11 +40,6 @@ a{
   transition: all 1s;
 }
 
-.header a:hover{
-  font-size: 2.1rem;
-  transition: all 1s;
-}
-
 
 .header>.top-circle{
   position: absolute;
@@ -56,9 +51,10 @@ a{
   border-left: 3px solid black;
   border-right: 3px solid black;
   left: 48%;
-  top: 50px;   /*47.5vh*/
+  top: 51px;   /*47.5vh*/
   cursor:'pointer'
 }
+
 .header>.top-circle:hover{
   cursor: pointer;
 }
@@ -69,6 +65,7 @@ a{
   background-image: url('../public/img/sit.png');
   background-size: cover;
 }
+
 .online-shop:hover{
   background-image: url('../public/img/hi.png');
 }
@@ -116,4 +113,8 @@ a{
   border-right: 3px solid black;
   left: 48%;
   top: -3px;
+}
+
+.footer>.bottom-circle:hover{
+  cursor: pointer;
 }

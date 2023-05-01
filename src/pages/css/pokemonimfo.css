@@ -14,15 +14,14 @@
 .imfo-pokemon{
   position: relative;
   background-color: lightgrey;
-  width: 80%;
+  width: 800px;
   margin: auto;
   margin-top: 50%;
   height: 100vh;
 }
 
 .imfo-pokemon div{
-  width: 80%;
-  height: 70vh;
+  width: 600px;
   margin: auto;
   margin-top: 200px ;
   background-color: aliceblue;

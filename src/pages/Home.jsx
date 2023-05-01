@@ -109,7 +109,7 @@ const Head = () =>{
       <div className='top-circle'
       style={value ? {top:'50px' , transition:'1.5s'}:{top:'47.5vh'}}
       onClick={click}
-      ></div>
+      />
     </div>
   )
 }
@@ -128,9 +128,8 @@ const Foot = () => {
       <span style={value ? {display:'' ,transition:'1.5s', transitionDelay:'1.5s'}: {display:'none'}}>gd</span>
       <span style={value ? {display:'', transition:'1.5s', transitionDelay:'1.5s'}: {display:'none'}}>ds</span>
       <div className='bottom-circle'
-      style={{cursor:'pointer'}}
       onClick={click}
-      ></div>
+      />
     </div>
   )
 }

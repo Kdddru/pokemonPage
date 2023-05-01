@@ -6,6 +6,7 @@ import { DataProvider } from './context/DataContext';
 import { Game } from './pages/Game';
 import { Home } from './pages/Home';
 import { PokemonImfor } from './pages/PokemonImfor';
+import { Layout } from './pages/Layout';
 
 
 
@@ -23,6 +24,7 @@ function App() {
             </Route>
             <Route path='/game' element={<Game/>}/>
             <Route path='/animation' element={<Animation/>}/>
+            <Route path='/layout' element={<Layout/>}/>            
           </Routes>
       </DataProvider>
     </div>

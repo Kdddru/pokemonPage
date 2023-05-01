@@ -8,10 +8,12 @@ import { FooterComp } from '../Components/FooterComp';
 export const PokemonList = () => {
   const {state} = useContext(DataContext);
   const pokemons = state.pokemons.results;
-
+  //초기값  (모든 포켓몬 불러오기)
   const [pokemonValue, setPokemonValue] =useState(pokemons);
+  //input 값
   const [inputValue, setInputValue] = useState(``);
   
+  //검색
   const search = (e) =>{
     e.preventDefault();
     const newList = pokemonValue.filter((pokemon)=>(
@@ -33,6 +35,8 @@ export const PokemonList = () => {
       <HeadComp/>
       <div className='input-div'>
         <Outlet/>
+
+        {/** 검색창 */}
         <form onSubmit={search}>
           <input type="text"
           onChange={(e)=>{
@@ -42,9 +46,11 @@ export const PokemonList = () => {
           />
           <input type="submit" value="검색" />        
         </form>
+        {/** 리셋 */}
         <button
         onClick={reset}
         >리셋</button>
+        {/** 포켓몬 보여지는 박스 */}
         <ul className='pokemonlist'>
             {pokemonValue.map((pokemon)=>(
               <li key={pokemon.id}>
