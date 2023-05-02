@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import pokemonsJson from '../data/pokemon.json'
 import gamesJson from '../data/games.json'
 import anisJson from '../data/anis.json'
+import monsterBallJson from '../data/monsterBall.json'
 
 
 const DataContext = React.createContext();
@@ -12,11 +13,14 @@ const DataProvider = ({children}) =>{
   const [pokemons, setPokemons] = useState(pokemonsJson);
   const [games, setGames] = useState(gamesJson);
   const [anis, setAnis] = useState(anisJson);
+  const [monsterBall, setMonsterball] = useState(monsterBallJson);
+
+
   const [btnValue, setBtnvalue] = useState(false);
 
   const value = {
-    state : {pokemons,games,anis,btnValue},
-    action : {setPokemons,setGames,setAnis,setBtnvalue}
+    state : {pokemons,games,anis,monsterBall,btnValue},
+    action : {setPokemons,setGames,setAnis,setMonsterball,setBtnvalue}
   }
     
   return(

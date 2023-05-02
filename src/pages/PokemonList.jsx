@@ -8,11 +8,17 @@ import { FooterComp } from '../Components/FooterComp';
 export const PokemonList = () => {
   const {state} = useContext(DataContext);
   const pokemons = state.pokemons.results;
+  
   //초기값  (모든 포켓몬 불러오기)
   const [pokemonValue, setPokemonValue] =useState(pokemons);
   //input 값
   const [inputValue, setInputValue] = useState(``);
   
+
+  const value = 932
+
+  const [plusPage, setPlusPage] = useState(1);
+
   //검색
   const search = (e) =>{
     e.preventDefault();
@@ -25,10 +31,13 @@ export const PokemonList = () => {
   
   //reset
   const reset = () =>{
-    setPokemonValue(pokemons);
+    setPokemonValue(pokemonValue);
   }
   
   //console.log(pokemons);
+  const plusPageValue = () =>{
+    setPlusPage(plusPage+1);
+  }
 
   return (
     <div>
@@ -38,20 +47,22 @@ export const PokemonList = () => {
 
         {/** 검색창 */}
         <form onSubmit={search}>
-          <input type="text"
+          <input type="text" required
           onChange={(e)=>{
             setInputValue(e.target.value)
           }}
             value={inputValue}
           />
-          <input type="submit" value="검색" />        
+          <input type="submit" value="검색"/>        
         </form>
         {/** 리셋 */}
         <button
         onClick={reset}
         >리셋</button>
         {/** 포켓몬 보여지는 박스 */}
-        <ul className='pokemonlist'>
+        <ul className='pokemonlist'
+        style={{height:`${plusPage*value}px`, overflow:'hidden'}}
+        >
             {pokemonValue.map((pokemon)=>(
               <li key={pokemon.id}>
                 <div>
@@ -66,6 +77,11 @@ export const PokemonList = () => {
               </li>
             ))}          
         </ul>
+        <div>
+          <button
+          onClick={plusPageValue}
+          >더보기</button>
+        </div>
       </div>
       <FooterComp/>
     </div>
