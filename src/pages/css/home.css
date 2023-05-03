@@ -2,14 +2,12 @@
   display: flex;
   margin: auto;
   margin-top: 20px;
-  background-color: aliceblue;
   width: 90%;
   min-height: 750px;
   height: 750px;
 }
 
 .layout-1{
-  background-color: antiquewhite;
   min-width: 400px;
   width: 50%;
   height: 100%;
@@ -22,20 +20,30 @@
 }
 
 .layout-2-1{
-  background-color: aquamarine;
+  padding: 30px;
+  padding-top: 20px;
   height: 50%;
+}
+.layout-2-1-1{
+  background-color: aliceblue;
+  border: 4px solid grey;
+  height: 100%;
 }
 
 .layout-2-2{
-  background-color: blueviolet;
+  padding: 30px;
   height: 50%;
 }
-
+.layout-2-2-1{
+  background-color: aliceblue;
+  border: 4px solid grey;
+  height: 100%;
+}
 
 .top-arrow{
   width:50px; height:50px;
   position:absolute;
-  top: 150px; right: 20px;
+  right:20px;
   animation-duration: 2s;
   animation-name: arrowAni;
   animation-iteration-count: infinite;
@@ -44,9 +52,9 @@
 
 @keyframes arrowAni{
   from{
-    top: 120px
+    top: 12%
   }
   to{
-    top: 100px
+    top: 8%
   }
 }

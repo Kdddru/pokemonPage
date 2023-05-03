@@ -14,10 +14,16 @@ export const PokemonList = () => {
   //input 값
   const [inputValue, setInputValue] = useState(``);
   
-
+  //더보기 페이지 높이 값
   const value = 932
-
+  
+  //더보기 페이지 * plusPage의 plusPage
   const [plusPage, setPlusPage] = useState(1);
+
+  //버튼 보이게 하기
+  const [onBtn, setOnbtn] = useState(false)
+
+  
 
   //검색
   const search = (e) =>{
@@ -32,17 +38,27 @@ export const PokemonList = () => {
   //reset
   const reset = () =>{
     setPokemonValue(pokemonValue);
+    setPlusPage(1);
+    //버튼 안보이게
+    setOnbtn(false)
   }
   
   //console.log(pokemons);
+  //페이지 늘리기
   const plusPageValue = () =>{
     setPlusPage(plusPage+1);
+    setOnbtn(true);
+  }
+  // top으로 가기
+  const onTop = () =>{
+    window.scrollTo({top:0, left:0, behavior:'smooth'});
   }
 
   return (
     <div>
       <HeadComp/>
       <div className='input-div'>
+        {/**modal 창 */}
         <Outlet/>
 
         {/** 검색창 */}
@@ -78,10 +94,18 @@ export const PokemonList = () => {
             ))}          
         </ul>
         <div>
+        {/** 더보기 버튼 */}
           <button
           onClick={plusPageValue}
-          >더보기</button>
+          >더보기
+          </button>
         </div>
+      </div>
+      <div className='top-btn'
+      onClick={onTop}
+      style={onBtn?{display:''}:{display:'none'}}
+      >
+        <span>Top</span>
       </div>
       <FooterComp/>
     </div>

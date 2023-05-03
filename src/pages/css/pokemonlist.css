@@ -70,3 +70,21 @@
   font-weight: 550;
   font-size: 1.5rem;
 }
+
+.top-btn{
+  background-image: url(/public/img/monsterBall.png);
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  right: 2%;
+  top: 80%;
+  position: fixed;
+  z-index: 5;
+  cursor: pointer;
+  text-align: center;
+}
+.top-btn{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+

@@ -1,18 +1,22 @@
 [
   {
     "name" : "몬스터볼",
-    "url" : "https://obj.the1.wiki/thecloud/temp/303030342debaaacec8aa4ed84b0ebb3bc285356292e706e67.png"
+    "url" : "img/monsterBall.png"
   },
   {
     "name" : "수퍼볼",
-    "url" : "https://obj.the1.wiki/thecloud/temp/303030332dec8a88ed8dbcebb3bc285356292e706e67.png"
+    "url" : "img/superBall.png"
   },
   {
     "name" : "하이퍼볼",
-    "url": "https://obj.the1.wiki/thecloud/temp/303030322ded9598ec9db4ed8dbcebb3bc285356292e706e67.png"
+    "url": "img/hyperBall.png"
   },
   {
     "name":"마스터볼",
-    "url":"https://obj.the1.wiki/thecloud/temp/303030312deba788ec8aa4ed84b0ebb3bc285356292e706e67.png"
+    "url":"img/masterBall.png"
+  },
+  {
+    "name": "프리미어볼",
+    "url":"img/primialBall.png"
   }
 ]

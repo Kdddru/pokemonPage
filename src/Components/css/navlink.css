@@ -1,8 +1,9 @@
 .nav-link{
   min-width: 650px;
+  max-height: 900px;
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 80px;
 }
 
 .nav-link > a{
@@ -42,4 +43,46 @@
 
 .nav-link > a:nth-child(4){
   background-color: #81FA3A;
+}
+
+
+.balls{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-left: 500px;
+}
+
+.balls>div{
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  margin-top: -100px;
+  animation: roll  3s linear infinite;
+  transform-origin: 50% 50%;;
+}
+
+.balls>div:nth-child(1){
+  background-image: url(/public/img/monsterBall.png);
+}
+.balls>div:nth-child(2){
+  background-image: url(/public/img/superBall.png);
+  animation-duration: 3.5s;
+}
+.balls>div:nth-child(3){
+  background-image: url(/public/img/hyperBall.png);
+  animation-duration: 4s;
+}
+.balls>div:nth-child(4){
+  background-image: url(/public/img/masterBall.png);
+  animation-duration: 4.5s;
+
+}
+
+@keyframes roll {
+  100%{
+    transform: rotate(360deg);
+  }
 }
