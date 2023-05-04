@@ -118,3 +118,7 @@ a{
 .footer>.bottom-circle:hover{
   cursor: pointer;
 }
+.footer span{
+  margin:30px 0 0 20px;
+  font-weight: 700;
+}

@@ -1,53 +1,45 @@
 import React, { useContext, useState } from 'react'
 import DataContext from '../context/DataContext'
-import './css/pokemonlist.css'
 import { NavLink, Outlet } from 'react-router-dom';
 import { HeadComp } from '../Components/HeadComp';
 import { FooterComp } from '../Components/FooterComp';
 
+import './css/pokemonlist.css'
+
 export const PokemonList = () => {
   const {state} = useContext(DataContext);
-  const pokemons = state.pokemons.results;
+
   
   //초기값  (모든 포켓몬 불러오기)
-  const [pokemonValue, setPokemonValue] =useState(pokemons);
+  const pokemons = state.pokemons.results;
+  
+  //검색값넣을곳
+
   //input 값
   const [inputValue, setInputValue] = useState(``);
-  
   //더보기 페이지 높이 값
   const value = 932
   
   //더보기 페이지 * plusPage의 plusPage
   const [plusPage, setPlusPage] = useState(1);
-
+  const maxPage = plusPage*value;
   //버튼 보이게 하기
   const [onBtn, setOnbtn] = useState(false)
 
-  
-
   //검색
-  const search = (e) =>{
-    e.preventDefault();
-    const newList = pokemonValue.filter((pokemon)=>(
-      pokemon.name === inputValue 
-    ));
-    setPokemonValue(newList);
-    setInputValue(``);
-  }
+  const search = pokemons.filter((pokemon)=>(
+    pokemon.name.includes(inputValue) || pokemon.id.includes(inputValue)
+  ))
   
-  //reset
-  const reset = () =>{
-    setPokemonValue(pokemonValue);
-    setPlusPage(1);
-    //버튼 안보이게
-    setOnbtn(false)
-  }
-  
+  const [click, setClick]  =useState(false);
   //console.log(pokemons);
   //페이지 늘리기
   const plusPageValue = () =>{
     setPlusPage(plusPage+1);
     setOnbtn(true);
+    if(maxPage===2796){
+      setClick(true)
+    }
   }
   // top으로 가기
   const onTop = () =>{
@@ -62,24 +54,18 @@ export const PokemonList = () => {
         <Outlet/>
 
         {/** 검색창 */}
-        <form onSubmit={search}>
           <input type="text" required
           onChange={(e)=>{
             setInputValue(e.target.value)
           }}
             value={inputValue}
           />
-          <input type="submit" value="검색"/>        
-        </form>
         {/** 리셋 */}
-        <button
-        onClick={reset}
-        >리셋</button>
         {/** 포켓몬 보여지는 박스 */}
         <ul className='pokemonlist'
-        style={{height:`${plusPage*value}px`, overflow:'hidden'}}
+        style={{minHeight:`${maxPage}px`, overflow:'hidden'}}
         >
-            {pokemonValue.map((pokemon)=>(
+            {search.map((pokemon)=>(
               <li key={pokemon.id}>
                 <div>
                   <NavLink to={`/pokemonlist/${pokemon.name}`}>
@@ -97,6 +83,7 @@ export const PokemonList = () => {
         {/** 더보기 버튼 */}
           <button
           onClick={plusPageValue}
+          disabled={click}
           >더보기
           </button>
         </div>

@@ -16,12 +16,10 @@ export const RandomPoke = () => {
     //console.log(random);
     
     const [randomNum, setRandomNum] = useState(random);
-    const [btnDisable, setBtnDisable] = useState(false);
     const RandomBtn = () =>{
       const random2 = Math.floor(Math.random()*pokemons.length);
       setRandomNum(random2);
       //console.log(random2)
-      setBtnDisable(true);
     }
   return (
     <div>
@@ -54,7 +52,7 @@ export const RandomPoke = () => {
         </ul>
         <div className='btn-div'
         style={value ? {opacity:'1',transition:'1s' ,transitionDelay:`2s`}: {opacity:'0'}} >
-          <button className='btn-div-returnBtn' onClick={RandomBtn} disabled={btnDisable}>다시!</button>
+          <button className='btn-div-returnBtn' onClick={RandomBtn}>다시!</button>
         </div>
     </div>
   )
