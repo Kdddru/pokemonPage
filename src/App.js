@@ -19,9 +19,8 @@ function App() {
       <DataProvider>
           <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/pokemonlist' element={<PokemonList/>}>
-              <Route path='/pokemonlist/:pokemon' element={<PokemonImfor/>}/>
-            </Route>
+            <Route path='/pokemonlist' element={<PokemonList/>}/>
+            <Route path='/pokemonlist/:pokemon' element={<PokemonImfor/>}/>
             <Route path='/game' element={<Game/>}/>
             <Route path='/animation' element={<Animation/>}/>
           </Routes>

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import DataContext from '../context/DataContext'
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { HeadComp } from '../Components/HeadComp';
 import { FooterComp } from '../Components/FooterComp';
 
@@ -51,8 +51,6 @@ export const PokemonList = () => {
       <HeadComp/>
       <div className='input-div'>
         {/**modal 창 */}
-        <Outlet/>
-
         {/** 검색창 */}
           <input type="text" required
           onChange={(e)=>{
