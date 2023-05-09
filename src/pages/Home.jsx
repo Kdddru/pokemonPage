@@ -3,14 +3,14 @@ import { NavLink } from '../Components/NavLink';
 import DataContext from '../context/DataContext';
 import { Link } from 'react-router-dom';
 import { RandomPoke } from '../Components/RandomPoke';
+import { MonsterBalls } from '../Components/MonsterBalls';
+import { News } from '../Components/News';
 
 import './css/home.css'
 
 //font
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import { MonsterBalls } from '../Components/MonsterBalls';
-import { News } from '../Components/News';
 
 
 export const Home = () => {
@@ -91,7 +91,7 @@ const Head = () =>{
       </Link>
       {/**몬스터볼 서클 */}
       <div className='top-circle'
-      style={value ? {top:'50px' , transition:'1.5s'}:{top:'48vh'}}
+      style={value ? {top:'50px' , transition:'1.5s'}:{top:'47.7vh'}}
       onClick={click}
       />
     </div>
