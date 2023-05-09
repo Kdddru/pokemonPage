@@ -61,7 +61,7 @@ export const PokemonList = () => {
         {/** 리셋 */}
         {/** 포켓몬 보여지는 박스 */}
         <ul className='pokemonlist'
-        style={{minHeight:`${maxPage}px`, overflow:'hidden'}}
+        style={{height:`${maxPage}px`, overflow:'hidden'}}
         >
             {search.map((pokemon)=>(
               <li key={pokemon.id}>
