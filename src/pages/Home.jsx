@@ -91,7 +91,7 @@ const Head = () =>{
       </Link>
       {/**몬스터볼 서클 */}
       <div className='top-circle'
-      style={value ? {top:'50px' , transition:'1.5s'}:{top:'47.7vh'}}
+      style={value ? {top:'50px' , transition:'1.5s'}:{top:'47.6vh'}}
       onClick={click}
       />
     </div>
