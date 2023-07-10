@@ -33,4 +33,9 @@ page : <a href="https://kdddru.github.io/PokemonPage/" >https://kdddru.github.io
 <br>
 
 ## 이용방법
-<pre><code>git clone https://github.com/Kdddru/PokemonPage.git </code></pre>
+<pre><code> git clone https://github.com/Kdddru/PokemonPage.git </code></pre>
+<pre><code> npm i </code></pre>
+<pre><code> npm start </code></pre>
+
+<br>
+
