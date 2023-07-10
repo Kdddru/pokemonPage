@@ -27,7 +27,8 @@ page : <a href="https://kdddru.github.io/PokemonPage/" >https://kdddru.github.io
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"/>
   
   ### Data : <img src="https://img.shields.io/badge/Json-000000?style=flat&logo=Json&logoColor=white"/>
-  ### API : pokemonAPI + 조금 더 추가 <a href="https://pokeapi.co/">https://pokeapi.co/</a>
+  ### API : pokemonAPI + 조금 더 추가  
+  ### 링크:<a href="https://pokeapi.co/">https://pokeapi.co/</a>
 </div>
 
 <br>
