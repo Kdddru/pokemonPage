@@ -35,7 +35,7 @@ page : <a href="https://kdddru.github.io/PokemonPage/" >https://kdddru.github.io
 ## 이용방법
 <pre><code> git clone https://github.com/Kdddru/PokemonPage.git </code></pre>
 or 우측상단 Addfile 다운로드
-<h4>터미널</p>
+<h4>터미널</h4>
 <pre><code> npm i </code></pre>
 <pre><code> npm start </code></pre>
 
