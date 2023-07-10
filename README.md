@@ -19,6 +19,11 @@ page : <a href="https://kdddru.github.io/PokemonPage/" >https://kdddru.github.io
 
 <br>
 
+## 제작기간
+2023.04.13 ~ 2023.05.09
+
+<br>
+
 ## Stack
 <div>
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
