@@ -9,4 +9,5 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"/>
   
   ### data : <img src="https://img.shields.io/badge/Json-000000?style=flat&logo=Json&logoColor=white"/>
+  ### api : pokemonApi + 조금 더 추가 <a href="https://pokeapi.co/">https://pokeapi.co/</a>
 </div>
