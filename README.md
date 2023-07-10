@@ -6,6 +6,11 @@
 포켓몬 웹페이지 리뉴얼한 프로젝트 입니다.
 <br>
 
+## 링크
+page : <a href="https://kdddru.github.io/PokemonPage/" >https://kdddru.github.io/PokemonPage/</a>
+
+<br>
+
 ## 목적
 1. 첫 프로젝트인 만큼 제가 좋아하는 IP가지고 프로젝트를 만들어 보고 싶었습니다.
 2. 리액트에 적응하기 위해 리액트를 이용하여 프로젝트를 진행했습니다.
